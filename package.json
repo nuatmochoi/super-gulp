@@ -1,0 +1,54 @@
+{
+  "name": "supergulp",
+  "version": "1.0.0",
+  "description": "Learn Gulp by building an awesome development environment",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nuatmochoi/super-gulp.git"
+  },
+  "author": "nuatmochoi <tjddn8770@naver.com>",
+  "license": "ISC",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build",
+    "deploy": "gulp deploy"
+  },
+  "bugs": {
+    "url": "https://github.com/nuatmochoi/super-gulp/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/register": "^7.8.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2016": "^6.24.1",
+    "babelify": "^10.0.0",
+    "delete": "^1.1.0",
+    "gift": "^0.10.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-bro": "^2.0.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-gh-pages-with-updated-gift": "^0.5.4",
+    "gulp-image": "^6.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-webserver": "^0.9.1",
+    "node-sass": "^4.13.1",
+    "uglifyify": "^5.0.2"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "@babel/preset-env"
+          ]
+        }
+      ]
+    ]
+  }
+}
